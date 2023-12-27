@@ -4,7 +4,7 @@
         "es2021": true,
         "node": true
     },
-    "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+    "extends": ["eslint:recommended"],
     "parserOptions": {
         "ecmaVersion": 12,
         "sourceType": "module"
@@ -27,7 +27,7 @@
         "prefer-const": "error",
         "no-console": "warn",
         "no-debugger": "error",
-        "no-alert": "warn",
-        "linebreak-style": ["error", "windows"]
+        "no-alert": "warn"
+        // "linebreak-style": ["error", "windows"]
     }
 }

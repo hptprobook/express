@@ -11,7 +11,7 @@ const PORT = process.env.NODE_PORT || 3000;
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use(morgan("combined"));
+// app.use(morgan("combined"));
 
 // Sử dụng engine từ express-handlebars
 app.engine(
@@ -25,6 +25,11 @@ app.set("views", "src/resources/views");
 
 app.get("/", (req, res) => {
     res.render("home");
+});
+
+app.get("/search", (req, res) => {
+    console.log(req.query);
+    res.render("search");
 });
 
 app.listen(PORT, () => {
